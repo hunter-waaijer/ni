@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap">
+    <link rel="stylesheet" href="style.css" />
+    <title>For fun - Hunter's Nintendo website</title>
+
+  </head>
+
+  <body>
+    <header>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="fun.html">For fun</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <h1>For fun</h1>
+      <a class="button" onclick="moveBall()">Move the ball</a>
+
+      <div class="ball" id="ball"></div>
+      
+    </div>
+    <script>
+      function moveBall() {
+        document.getElementById("ball").style.top = "100px";
+      }
+    </script>
+  </body>
+</html>
