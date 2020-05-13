@@ -18,14 +18,19 @@
     </header>
     <div class="container">
       <h1>For fun</h1>
-      <a class="button" onclick="moveBall()">Move the ball</a>
+      <a class="button" onclick="moveBall()">Move Hunter Around</a>
 
-      <div class="ball" id="ball"></div>
-      
+      <!-- <div class="ball" id="ball"></div> -->
+      <img src="hunter-sad.jpg" id="ball" class="hunter-sad"/>
+
     </div>
     <script>
+
       function moveBall() {
-        document.getElementById("ball").style.top = "100px";
+        var x = Math.floor(Math.random()*500);
+        var y = Math.floor(Math.random()*500)
+        document.getElementById("ball").style.top = y + "px";
+        document.getElementById("ball").style.left = x + "px";
       }
     </script>
   </body>
